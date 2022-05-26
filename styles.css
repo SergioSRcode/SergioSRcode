@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: slategray;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    "photo header"
+    "navbar navbar"
+    "main main"
+    "footer footer";
+}
+
+.item {
+    background-color: #96BCEF;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.photo img{
+    grid-area: photo;
+    display: flex;
+    max-width: 150px;
+    max-height: auto;
+}
+
+.photo, .header, .main {
+    background-color: white;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.navbar > a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: white;
+    color: #96BCEF;
+}
+
+.main {
+    grid-area: main;
+    padding: 5px;
+}
+
+.footer {
+    grid-area: footer;
+    position: static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    text-align: left;
+    margin-top: 10%;
+    background-color: #96BCEF;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul:hover {
+    background-color:#D6EAF8;
+    color: black;
+}
+
+li:hover {
+    font-size: 150%;
+    margin: 5px;
+}
+
+
+.benefits {
+    height: 50vh;
+    width: auto;
+}
+
+.our_bananas {
+    height: 80vh;
+    width: auto;
+}
+
+h1 {
+    color:green;
+    font-size: 300%;
+    font-weight: lighter;
+}
+
+h2 {
+    color: #96BCEF;
+}
